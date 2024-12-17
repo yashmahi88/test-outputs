@@ -18,4 +18,4 @@ jobs:
     steps:
       - name: Generate Output
         id: generate-output
-        run: echo "result=${{ steps.generate-output.outputs.result }}" >> $GITHUB_OUTPUT
+        run: echo "result=valuesss" >> $GITHUB_OUTPUT
