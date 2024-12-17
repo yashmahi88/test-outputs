@@ -1,0 +1,22 @@
+name: Reusable Workflow 2
+on:
+  workflow_call:
+    inputs:
+      input_from_1:
+        required: true
+        type: string
+    outputs:
+      result:
+        description: "Result from Reusable Workflow 2"
+        value: ${{ jobs.generate-output.outputs.result }}
+
+jobs:
+  reusable2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Input from Reusable Workflow 1
+        run: | 
+            echo "Input received: ${{ inputs.input_from_1 }}"
+      - name: Generate Output
+        id: generate-output
+        run: echo "result=Output from Reusable Workflow 2" >> $GITHUB_OUTPUT
