@@ -13,6 +13,8 @@ on:
 jobs:
   reusable1:
     runs-on: ubuntu-latest
+    outputs:
+        new: ${{ steps.generate-output.outputs.new }}
     steps:
       - name: Generate Output
         id: generate-output
