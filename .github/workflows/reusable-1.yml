@@ -8,7 +8,7 @@ on:
     outputs:
       result:
         description: "Result from Reusable Workflow 1"
-        value: ${{ jobs.generate-output.outputs.result }}
+        value: ${{ jobs.reusable1.outputs.result }}
 
 jobs:
   reusable1:
