@@ -19,5 +19,5 @@ jobs:
       - name: Generate Output
         id: generate-output
         run: | 
-            echo "result=valuesss" >> $GITHUB_OUTPUT
+            echo "result2=valuesss" >> $GITHUB_OUTPUT
             
