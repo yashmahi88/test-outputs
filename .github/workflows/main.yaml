@@ -12,5 +12,5 @@ jobs:
     needs: reusable-1
     uses: ./.github/workflows/reusable-2.yml
     with:
-      input_from_1: ${{ needs.reusable-1.outputs.result }}
+      result: ${{ needs.reusable-1.outputs.result }}
 
