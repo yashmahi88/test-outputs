@@ -14,7 +14,7 @@ jobs:
   reusable1:
     runs-on: ubuntu-latest
     outputs:
-        result: ${{ steps.generate-output.outputs.new }}
+        result: ${{ steps.generate-output.outputs.result }}
     steps:
       - name: Generate Output
         id: generate-output
